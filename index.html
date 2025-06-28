@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SGS EXAM CRACKER</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      color: white;
+    }
+    .header {
+      background-color: #003366;
+      color: white;
+      padding: 16px;
+      font-size: 28px;
+      font-weight: 700;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .welcome, .motivation {
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: 500;
+      padding: 0 12px;
+    }
+    .motivation {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .custom-button {
+      display: block;
+      width: 90%;
+      max-width: 380px;
+      margin: 22px auto;
+      padding: 20px;
+      font-size: 19px;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      transition: transform 0.1s ease;
+    }
+    .custom-button:active {
+      transform: scale(0.96);
+    }
+    .blink {
+      animation: blink 1.5s infinite;
+    }
+    @keyframes blink {
+      0%   { opacity: 1; }
+      50%  { opacity: 0.7; }
+      100% { opacity: 1; }
+    }
+    .btn-red    { background-color: #d93025; }
+    .btn-green  { background-color: #188038; }
+    .btn-brown  { background-color: #8B4513; }
+    .btn-black  { background-color: #000000; }
+    .btn-blue   { background-color: #1a73e8; }
+    .btn-orange { background-color: #ff6f00; }
+    .btn-purple { background-color: #8e24aa; }
+    .btn-teal   { background-color: #009688; }
+    .btn-yellow { background-color: #f9a825; }
+
+    .share-button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .copyright {
+      margin-top: 25px;
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">SGS EXAM CRACKER</div>
+
+  <div class="welcome">
+    🙏 Welcome to SGS EXAM CRACKER में आपका स्वागत है! 🎉
+  </div>
+  <div class="motivation">
+    🔥 मेहनत इतनी खामोशी से करो कि सफलता शोर मचा दे! 🔥
+  </div>
+
+  <button class="custom-button btn-red blink" onclick="openLink('https://drive.google.com/drive/folders/1kuiMOHnkRewT9nN4RBaJyrGIjJJBDLtk?usp=sharing')">
+    🔥 SSC GD 2026 रावण बैच
+  </button>
+  <button class="custom-button btn-green blink" onclick="openLink('https://drive.google.com/drive/folders/1mXVIzRNVTBIoLjDCAT-7Jome1AZ7n6SY?usp=sharing')">
+    🚓 BIHAR POLICE
+  </button>
+  <button class="custom-button btn-brown" onclick="openLink('https://drive.google.com/drive/folders/1ZNsSgbboY-uBs2CxYyZhhtaT4PQN-pky?usp=sharing')">
+    📦 SSC MTS
+  </button>
+  <button class="custom-button btn-black" onclick="openLink('https://drive.google.com/drive/folders/1CqVZz4A2JqrqMYambXq7QfkYPborLiIP?usp=sharing')">
+    📚 SSC ALL EXAM
+  </button>
+  <button class="custom-button btn-blue" onclick="openLink('https://drive.google.com/drive/folders/1FL05B6bjAayerJB0E0sJTOA-2YVMzx9n?usp=sharing')">
+    🎥 WEB SERIES
+  </button>
+  <button class="custom-button btn-yellow blink" onclick="openLink('https://drive.google.com/drive/folders/1_8phmBbQd1-7lx6tRHtYB5SOiJqTLfhK?usp=drive_link')">
+    🧮 MOCK TEST
+  </button>
+  <button class="custom-button btn-purple" onclick="openLink('https://drive.google.com/drive/folders/1K6W9mPP9D6_HEUqWXow9Ae3UmeZ2n9b8?usp=sharing')">
+    ✏️ ENGLISH TO HINDI
+  </button>
+  <button class="custom-button btn-teal blink" onclick="openLink('https://drive.google.com/drive/folders/11DAxL4dbMq32zgWfGZciO9yKsEj-QEj_?usp=sharing')">
+    🔗 IMP LINK
+  </button>
+
+  <button class="share-button" onclick="shareApp()">
+    📤 Share App
+  </button>
+
+  <div class="copyright">
+    © SGS EXAM CRACKER
+  </div>
+
+  <script>
+    function openLink(url) {
+      window.open(url, '_blank');
+    }
+
+    function shareApp() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'SGS EXAM CRACKER',
+          text: 'Check out this study app!',
+          url: window.location.href
+        }).catch(err => console.log('Share failed:', err));
+      } else {
+        alert('Sharing not supported on this device.');
+      }
+    }
+  </script>
+
+</body>
+</html>
